@@ -13,8 +13,9 @@
     "react-scripts": "3.4.1"
   },
   "homepage": "https://shawnpcw.github.io/breakingbadapi",
-  "scripts": {
-    "deploy":"gh-pages -d src",
+  "scripts": { 
+    "predeploy":"npm run build",
+    "deploy":"gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
